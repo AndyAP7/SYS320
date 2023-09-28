@@ -15,7 +15,8 @@ function menu() {
 
 	echo "[1] Admin Menu"
 	echo "[2] Security Menu"
-	echo "[3] Exit"
+	echo "[3] Block List Menu"
+	echo "[4] Exit"
 	read -p "Please enter a choice above: " choice
 
 	case "$choice" in 
@@ -24,7 +25,10 @@ function menu() {
 		;;
 		2) security_menu
 		;;
-		3) exit 0
+		3) block_list_menu
+		;;
+		4
+			exit 0
 		;;
 		*) 
 		
@@ -38,6 +42,32 @@ function menu() {
 			menu
 		;;
 	esac
+}
+function block_list_menu() {
+
+	clear
+        echo "[C]isco blocklist generator"
+        echo "[D]omain URL blocklist generator"
+        echo "[W]indows blocklist generator"
+        echo "[4] Exit"
+        read -p "Please enter a choice above: " choice
+
+        case "$choice" in
+
+                C|c)
+                ;;
+                D|d)
+                ;;
+       		W|w)
+                ;;
+                4) exit 0
+                ;;
+                *) 
+                        invalid_opt
+                ;;
+        esac
+
+block_list_menu
 }
 
 function admin_menu() {
