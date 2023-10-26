@@ -1,1 +1,2 @@
-Here is a test file
+Here is a test line
+And here is another line
