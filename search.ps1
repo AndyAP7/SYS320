@@ -1,1 +1,1 @@
-$searchLog = Read-host -Prompt "Please specify a keyword or phrase to search for"
+$searchLog = Read-host -Prompt "Specify a keyword or phrase to search for, please and thank you"
